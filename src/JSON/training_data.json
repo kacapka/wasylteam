@@ -1,0 +1,233 @@
+[{  
+   "id":2,
+   "name":"CHEST DAY",
+   "date":"22.01.2018",
+   "description": "(Rest 90 seconds after the 1st set of exercise 1 and then do the first set of exercise 2. Then rest 90 seconds and go back to exercise 1. Continue this pattern until both exercises are done for the prescribed amount of sets. That way you rest 3 minutes in between sets of the same exercise but save time).",
+   "parts":[  
+      {  
+         "id":2,
+         "name":"STRENGTH",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":5,
+               "prefix":"prefix4",
+               "name":"BENCH PRESS",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            },
+            {  
+               "id":4,
+               "prefix":"prefix6",
+               "name":"BARBELL CURS",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            },
+            {  
+               "id":6,
+               "prefix":"prefix5",
+               "name":"INCLINE PRESS",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            }
+         ]
+      },
+      {  
+         "id":1,
+         "name":"CONDITIONING",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":1,
+               "prefix":"prefix3",
+               "name":"ROW",
+               "desc":"4 x 400m(60s rest)",
+               "sequence":0
+            },
+            {  
+               "id":3,
+               "prefix":"prefix1",
+               "name":"EMOM 20min",
+               "desc":"30DU, 30Air squats",
+               "sequence":0
+            }
+         ]
+      },
+      {  
+         "id":3,
+         "name":"ACCESSORY",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":7,
+               "prefix":"prefix8",
+               "name":"dumbel curls",
+               "desc":"4 x 4-7(90s rest)",
+               "sequence":0
+            },
+            {  
+               "id":9,
+               "prefix":"prefix9",
+               "name":"weighted dips",
+               "desc":"3 sets 4-7 reps",
+               "sequence":0
+            }
+         ]
+      }
+   ],
+   "owner":{  
+      "id":5,
+      "accountProvider":"GOOGLE",
+      "externalId":106106184219340665444,
+      "firstName":"wilkuzord",
+      "lastName":".",
+      "email":"wilkuzord@gmail.com",
+      "premiumAccountExpirationDate":null
+   }
+},
+ {  
+   "id":2,
+   "name":"LEGS AND BICEPS",
+   "date":"24.01.2018",
+   "description": "another day(Rest 90 seconds after the 1st set of exercise 1 and then do the first set of exercise 2. Then rest 90 seconds and go back to exercise 1. Continue this pattern until both exercises are done for the prescribed amount of sets. That way you rest 3 minutes in between sets of the same exercise but save time).",
+   "parts":[  
+      {  
+         "id":2,
+         "name":"STRENGTH",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":5,
+               "prefix":"prefix4",
+               "name":"BACK SQUAT",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            },
+            {  
+               "id":4,
+               "prefix":"prefix6",
+               "name":"BULGARIAN SPLIT SQUAT",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            },
+            {  
+               "id":6,
+               "prefix":"prefix5",
+               "name":"OH LOUNGES",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            }
+         ]
+      },
+      {  
+         "id":3,
+         "name":"ACCESSORY",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":7,
+               "prefix":"prefix8",
+               "name":"NEGATIVE PULL UPS",
+               "desc":"4 x 10",
+               "sequence":0
+            },
+            {  
+               "id":9,
+               "prefix":"prefix9",
+               "name":"GHD SIT UPS",
+               "desc":"5 x 20",
+               "sequence":0
+            }
+         ]
+      }
+   ],
+   "owner":{  
+      "id":5,
+      "accountProvider":"GOOGLE",
+      "externalId":106106184219340665444,
+      "firstName":"wilkuzord",
+      "lastName":".",
+      "email":"wilkuzord@gmail.com",
+      "premiumAccountExpirationDate":null
+   }
+},
+ {  
+   "id":2,
+   "name":"SHOULDERS",
+   "date":"20.01.2018",
+   "description": "blabal(Rest 90 seconds after the 1st set of exercise 1 and then do the first set of exercise 2. Then rest 90 seconds and go back to exercise 1. Continue this pattern until both exercises are done for the prescribed amount of sets. That way you rest 3 minutes in between sets of the same exercise but save time).",
+   "parts":[  
+      {  
+         "id":2,
+         "name":"STRENGTH",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":5,
+               "prefix":"prefix4",
+               "name":"MILITARY PRESS",
+               "desc":"6 x 4-7(90s rest)",
+               "sequence":0
+            },
+            {  
+               "id":4,
+               "prefix":"prefix6",
+               "name":"ARNOLDKI",
+               "desc":"6 x 8",
+               "sequence":0
+            },
+            {  
+               "id":6,
+               "prefix":"prefix5",
+               "name":"HS HOLD",
+               "desc":"6 x 40s",
+               "sequence":0
+            }
+         ]
+      },
+      {  
+         "id":1,
+         "name":"CONDITIONING",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":1,
+               "prefix":"prefix3",
+               "name":"AIRBIKE INTERWALS",
+               "desc":"10 x 30s on 30 off",
+               "sequence":0
+            },
+            {  
+               "id":3,
+               "prefix":"prefix1",
+               "name":"RUNING",
+               "desc":"20 min easy peace",
+               "sequence":0
+            }
+         ]
+      },
+      {  
+         "id":3,
+         "name":"ACCESSORY",
+         "sequence":0,
+         "exercises":[  
+            {  
+               "id":7,
+               "prefix":"prefix8",
+               "name":"TABATA",
+               "desc":"hollow hold",
+               "sequence":0
+            }            
+         ]
+      }
+   ],
+   "owner":{  
+      "id":5,
+      "accountProvider":"GOOGLE",
+      "externalId":106106184219340665444,
+      "firstName":"wilkuzord",
+      "lastName":".",
+      "email":"wilkuzord@gmail.com",
+      "premiumAccountExpirationDate":null
+   }
+} ]
