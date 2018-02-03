@@ -187,15 +187,23 @@ button {
     list-style: none;
 }
 
+
+.nav {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: .3s ease all;
+    background-color: #fff;
+}
+
 .nav-closed {
-    display: none;
+    transform: translateY(-100%);
 }
 
 .nav-open {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
+    transform: translateY(50px);
 }
 
 .mobile-nav li {
@@ -214,11 +222,12 @@ button {
     justify-content: space-between;
 /*    background-color: #000;*/
     background-color: #e6e6e6;
+    height: 50px;
 }
 
 .navbar-logo,
 .navbar-hamburger {
-    padding: 15px;
+    padding: 0 15px;
     color: #fff;
     color: #0A2E4A;
     font-size: 1.4rem;
@@ -228,6 +237,10 @@ button {
     background-color: #F04F5F;
     color: #fff;
     align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
 }
 
 /*footer*/

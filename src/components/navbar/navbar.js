@@ -14,7 +14,7 @@ class NavBar extends Component {
     toggleNav() {
         this.props.toggleNav(this.props.isNavOpen);
     }
-      
+     
     render() {
         return (
             <div>
