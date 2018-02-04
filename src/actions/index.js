@@ -18,11 +18,12 @@ function returnDate(moment) {
     }
 }
 
-export const TOGGLE_NAV = 'TOGGLE_NAV';
-export const FETCH_INSTA = 'FETCH_INSTA';
-export const FETCH_TRAININGS = 'FETCH_TRAININGS';
-export const SET_DATE = 'SET_DATE';
+export const TOGGLE_NAV = 'toggle_nav';
+export const FETCH_INSTA = 'fetch_insta';
+export const FETCH_TRAININGS = 'fetch_trainings';
+export const SET_DATE = 'set_date';
 export const SELECT_PRICE = 'select_price';
+export const PLAN_TRANSITION = 'plan_transition';
 
 //instagram access token
 const ACCESS_TOKEN = '1718569605.1df0baa.16cb0565051842b68e8e667d5f6cfcca';
@@ -102,4 +103,14 @@ export function selectPrice(id) {
         type: SELECT_PRICE,
         payload: id
     }
+}
+
+//change direction for plan transition css
+export function planTransition(direction) {
+    
+    return {
+        type: PLAN_TRANSITION,
+        payload: direction
+    }
+    
 }

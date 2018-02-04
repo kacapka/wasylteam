@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 import SectionBox from '../../../reuse/section_box';
 import { setDateBack,
-         setDateForward
+         setDateForward,
+         planTransition
 } from '../../../../actions/index';
 
 class PlanDate extends Component {
@@ -17,10 +18,12 @@ class PlanDate extends Component {
     
     dayBack() {
         this.props.setDateBack(this.props.date.moment);
+        this.props.planTransition('LEFT');
     }
     
     dayForward() {
         this.props.setDateForward(this.props.date.moment);
+        this.props.planTransition('RIGHT');
     }
     
     render() {
@@ -66,4 +69,7 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { setDateBack, setDateForward })(PlanDate);
+export default connect(
+    mapStateToProps, 
+    { setDateBack, setDateForward, planTransition }
+)(PlanDate);

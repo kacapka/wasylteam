@@ -6,6 +6,7 @@ import fetchInsta from './reducer_fetchinsta';
 import setDate from './reducer_setdate';
 import fetchTrainings from './reducer_fetchtrainings';
 import selectPrice from './reducer_selectprice';
+import planTransition from './reducer_planTransition';
 
 const rootReducer = combineReducers({
     isNavOpen: toggleNav,
@@ -13,7 +14,8 @@ const rootReducer = combineReducers({
     activeDate: setDate,
     trainings: fetchTrainings,
     form: formReducer,
-    selectedPrice: selectPrice
+    selectedPrice: selectPrice,
+    transitionPlan: planTransition
 });
 
 export default rootReducer;

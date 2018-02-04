@@ -1,7 +1,7 @@
 [{  
    "id":2,
    "name":"CHEST DAY",
-   "date":"22.01.2018",
+   "date":"04.02.2018",
    "description": "(Rest 90 seconds after the 1st set of exercise 1 and then do the first set of exercise 2. Then rest 90 seconds and go back to exercise 1. Continue this pattern until both exercises are done for the prescribed amount of sets. That way you rest 3 minutes in between sets of the same exercise but save time).",
    "parts":[  
       {  
@@ -88,7 +88,7 @@
  {  
    "id":2,
    "name":"LEGS AND BICEPS",
-   "date":"24.01.2018",
+   "date":"02.02.2018",
    "description": "another day(Rest 90 seconds after the 1st set of exercise 1 and then do the first set of exercise 2. Then rest 90 seconds and go back to exercise 1. Continue this pattern until both exercises are done for the prescribed amount of sets. That way you rest 3 minutes in between sets of the same exercise but save time).",
    "parts":[  
       {  
@@ -154,7 +154,7 @@
  {  
    "id":2,
    "name":"SHOULDERS",
-   "date":"20.01.2018",
+   "date":"06.02.2018",
    "description": "blabal(Rest 90 seconds after the 1st set of exercise 1 and then do the first set of exercise 2. Then rest 90 seconds and go back to exercise 1. Continue this pattern until both exercises are done for the prescribed amount of sets. That way you rest 3 minutes in between sets of the same exercise but save time).",
    "parts":[  
       {  

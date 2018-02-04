@@ -471,7 +471,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 35px 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .date-info {
@@ -493,7 +493,16 @@ footer {
 }
 
 .section-training {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.section-training-box {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 40px 20px 40px;
 }
 
 .training-box,
@@ -506,6 +515,7 @@ footer {
 .training-box {
     margin-bottom: 20px;
     padding: 0 20px 0 20px;
+    text-align: left;
 }
 
 .exercise-box {
@@ -513,7 +523,7 @@ footer {
 }
 
 .training-name {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #F04F5F;
 }
 
@@ -670,6 +680,44 @@ textarea {
 .price-box-select {
     margin: 20px 0;
 }
+
+/*transitions for react components*/
+
+/*plan swiping*/
+
+.LEFT-leave,
+.RIGHT-leave {
+    display: none;
+}
+
+.LEFT-leave-active,
+.RIGHT-leave-active {
+    display: none;
+}
+
+/*RIGHT*/
+
+.RIGHT-enter {
+    transform: translateX(100%);
+}
+
+.RIGHT-enter-active {
+    transform: translateX(0);
+    transition: .3s ease-in all;
+}
+
+/*LEFT*/
+
+.LEFT-enter {
+    transform: translateX(-100%);
+}
+
+.LEFT-enter-active {
+    transform: translateX(0);
+    transition: .3s ease-in all;
+}
+
+
 
 
 
