@@ -12,10 +12,14 @@ class NavBar extends Component {
     }
     
     toggleNav() {
+        console.log('click nav');
         this.props.toggleNav(this.props.isNavOpen);
     }
      
     render() {
+        const { isNavOpen } = this.props;
+        const iconClass = (isNavOpen === 'nav-closed') ? "ion-navicon-round" : "ion-close-round";
+        
         return (
             <div>
                 <NavBarMobile isOpen={this.props.isNavOpen} />
@@ -24,7 +28,7 @@ class NavBar extends Component {
                     <div 
                         className="navbar-hamburger"
                         onClick={this.toggleNav} >
-                            <i className="ion-navicon-round" />
+                            <i className={iconClass} />
                     </div>
                 </div>
             </div>
