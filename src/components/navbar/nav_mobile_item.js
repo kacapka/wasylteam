@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { ToggleNav } from '../../actions/index';
+import { toggleNav } from '../../actions/index';
 
 class NavItem extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class NavItem extends Component {
     }
     
     closeNav() {
-        this.props.ToggleNav();
+        this.props.toggleNav(this.props.isNavOpen);
     }
     
     render() {
@@ -27,5 +27,11 @@ class NavItem extends Component {
         );
     }
 } 
+
+function mapStateToProps(state) {
+    return {
+        isNavOpen: state.isNavOpen
+    }
+}
             
-export default connect(null, { ToggleNav })(NavItem);
+export default connect(mapStateToProps, { toggleNav })(NavItem);

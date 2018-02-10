@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NavBar from './navbar/navbar';
-import Content from './content/content';
+import NavBarUser from './navbar/navbar_user';
+import ContentUser from './content/content_user';
 import Footer from './footer/footer';
 
-class App extends Component {
+class AppUser extends Component {
     render() {
         return (
             <div>
@@ -12,8 +12,8 @@ class App extends Component {
                     <h3>deskop view under construction</h3>
                 </div>
                 <div className="mobile app-container">
-                    <NavBar />
-                    <Content />
+                    <NavBarUser />
+                    <ContentUser />
                     <Footer />
                 </div>
             </div>
@@ -21,4 +21,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default AppUser;

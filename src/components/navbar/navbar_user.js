@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { toggleNav } from '../../actions/index';
-import NavBarMobile from './navbar_mobile';
+import NavBarMobileUser from './navbar_mobile_user';
 
-class NavBar extends Component {
+class NavBarUser extends Component {
     constructor(props) {
         super(props);
         
@@ -22,7 +22,7 @@ class NavBar extends Component {
         
         return (
             <div>
-                <NavBarMobile isOpen={this.props.isNavOpen} />
+                <NavBarMobileUser isOpen={this.props.isNavOpen} />
                 <div className="navbar">
                     <div className="navbar-logo">MW.</div>
                     <div 
@@ -42,4 +42,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { toggleNav })(NavBar);
+export default connect(mapStateToProps, { toggleNav })(NavBarUser);

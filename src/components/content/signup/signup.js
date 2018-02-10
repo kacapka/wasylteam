@@ -10,11 +10,11 @@ class SignUp extends Component {
                     <div className="section-name name-login">
                         ZALOGUJ SIĘ NA SWOJE KONTO
                     </div>
-                    <Link to='/user/plan' className="btn-log-in btn-fb">
+                    <Link to='/' className="btn-log-in btn-fb">
                         <i className="ion-social-facebook"></i>
                         <span>Kontynuuj prze Facebook</span>
                     </Link>
-                    <Link to='user/payment' className="btn-log-in btn-google">
+                    <Link to='/' className="btn-log-in btn-google">
                         <i className="ion-social-googleplus"></i>
                         <span>Kontynuuj prze Google</span>
                     </Link>

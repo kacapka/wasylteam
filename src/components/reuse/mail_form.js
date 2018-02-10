@@ -95,9 +95,9 @@ function validate(values) {
 export default reduxForm({
     form: 'sendMail',
     fields: _.keys(FIELDS),
-    initialValues: {
+    /*initialValues: {
         name: 'kacapka',
         email: 'kacapka@gmail.com'
-    },
+    },*/
     validate
 })(MailForm);

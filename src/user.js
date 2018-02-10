@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import ReduxPromise from 'redux-promise';
 
-import App from './components/app';
+import AppUser from './components/app_user';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
@@ -13,7 +13,7 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
-      <App />
+      <AppUser />
     </BrowserRouter>
   </Provider>
-  , document.querySelector('.wasylApp'));
+  , document.querySelector('.app-user'));
