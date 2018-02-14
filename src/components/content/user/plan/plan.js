@@ -12,7 +12,7 @@ import { setDate, fetchTrainings } from '../../../../actions/index';
 
 class Plan extends Component {
     
-    componentDidMount() {
+    componentDidMount() {      
         this.props.setDate();
         this.props.fetchTrainings();
     }

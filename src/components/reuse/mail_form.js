@@ -5,22 +5,22 @@ import { Field, reduxForm } from 'redux-form';
 
 const FIELDS = {
     name: {
-        htmlTag: 'input',
+        htmltag: 'input',
         type: 'text',
         label: 'imię'
     },
     email: {
-        htmlTag: 'input',
+        htmltag: 'input',
         type: 'email',
         label: 'mail'
     },
     subject: {
-        htmlTag: 'input',
+        htmltag: 'input',
         type: 'text',
         label: 'temat'
     },
     message: {
-        htmlTag: 'textarea',
+        htmltag: 'textarea',
         type: 'text',
         label: 'twoja wiadomość'
     }
@@ -28,17 +28,21 @@ const FIELDS = {
 
 class MailForm extends Component {
     
-    renderField(field, type) {
-        const fieldHelper = this.props.fields[type];
-        const className = fieldHelper.touched ? fieldHelper.error : '';
+    constructor(props) {
+        super(props);
+        
+        this.renderField = this.renderField.bind(this);
+    }
+    
+    renderField(field) {
+        const { type, label} = field.config;
+        const className = field.meta.touched ? field.meta.error : '';
     
         return (
-            <div className="mail-form-box" key={field.label}>
-                <label>{field.label}</label>
-                <field.htmlTag
-                    type={field.type}
-                    {...fieldHelper}
-                />
+            <div className="mail-form-box">
+                <label>{label}</label>
+                <field.config.htmltag type={type} 
+                    {...field.input} />
                 <div className={`mail-alert ${className}`}>
                     <i className='ion-alert'></i>
                     pole obowiazkowe
@@ -55,7 +59,8 @@ class MailForm extends Component {
         //as callback use this.props.history.push('path');
         //it navigate user to certain path after message is succeed
         
-        //in action creator in axios use then method to set and invoke callback
+        //in action creator in axios use .then() method to set and invoke callback
+        
         console.log(values);
     }
     
@@ -63,10 +68,24 @@ class MailForm extends Component {
         const { handleSubmit } = this.props;
         
         return (
-            <form 
-                onSubmit={handleSubmit(this.onSubmit.bind(this))}
+            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}
                 className='mail-form'>
-                {_.map(FIELDS, this.renderField.bind(this))}
+                <Field name="name"
+                    config={FIELDS.name}
+                    component={this.renderField}
+                />
+                <Field name="email"
+                    config={FIELDS.email}
+                    component={this.renderField}
+                />
+                <Field name="subject"
+                    config={FIELDS.subject}
+                    component={this.renderField}
+                />
+                <Field name="message"
+                    config={FIELDS.message}
+                    component={this.renderField}
+                />
                 <div className="flex-wrapper">
                     <button 
                         type="submit"
@@ -94,10 +113,15 @@ function validate(values) {
 
 export default reduxForm({
     form: 'sendMail',
-    fields: _.keys(FIELDS),
-    /*initialValues: {
-        name: 'kacapka',
-        email: 'kacapka@gmail.com'
-    },*/
     validate
 })(MailForm);
+
+
+// when user is logged in get name and adress - set initial values
+
+/*
+initialValues: {
+    name: 'kacapka',
+    email: 'kacapka@gmail.com'
+},
+*/

@@ -12,7 +12,6 @@ class NavBarHome extends Component {
     }
     
     toggleNav() {
-        console.log('click nav');
         this.props.toggleNav(this.props.isNavOpen);
     }
      

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 
-class PlanDate extends Component {
+class PlanTraining extends Component {
     
     constructor(props) {
         super(props);
@@ -63,6 +63,7 @@ class PlanDate extends Component {
     }
 
     render() {
+
         const transitionOpt = {
             transitionName: this.props.direction,
             transitionEnterTimeout: 300,
@@ -88,4 +89,6 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps)(PlanDate);
+export default connect(mapStateToProps)(PlanTraining);
+
+

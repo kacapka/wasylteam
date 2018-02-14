@@ -12,7 +12,7 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <BrowserRouter>
+    <BrowserRouter basename="/public">
       <AppHome />
     </BrowserRouter>
   </Provider>
