@@ -5,15 +5,15 @@ import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import ReduxPromise from 'redux-promise';
 
-import AppUser from './components/app_user';
+import App from './components/app';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <BrowserRouter basename="/user">
-      <AppUser />
+    <BrowserRouter>
+      <App />
     </BrowserRouter>
   </Provider>
-  , document.querySelector('.app-user'));
+  , document.querySelector('.app'));

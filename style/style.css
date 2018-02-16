@@ -349,7 +349,7 @@ footer {
 
 .price-item-select.active {
     border: 1px solid #f1c40f;
-    transition: .8s ease all;
+    transition: .3s ease all;
     font-weight: 400;
 }
 
@@ -672,7 +672,6 @@ textarea {
 /*payment*/
 
 .yellow-box {
-/*    border: 1px solid #f1c40f;*/
     border-radius: 7px;
     padding: 10px;
     font-size: .8rem;
