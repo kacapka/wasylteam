@@ -1,22 +1,23 @@
 const path = require('path');
-const webpack = require('webpack');
+//const webpack = require('webpack');
 
 module.exports = {
-  context: path.join(__dirname, 'src'),
-  entry: {
-    home: './index.js'
-  },
+  mode: 'production',
+  entry: './src/index.js',
   output: {
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['react', 'es2015', 'stage-1']
+    rules: [
+      {
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: ['react', 'es2015', 'stage-1']
+        }
       }
-    }]
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx']
