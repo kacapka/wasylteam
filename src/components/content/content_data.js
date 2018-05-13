@@ -11,13 +11,13 @@ const CONTENT_DATA = {
     },
     img: {
         infoBox: [
-            'url(./img/bg-bridges.jpg)',
-            'url(./img/bg-bridges.jpg)',
-            'url(./img/bg-bridges.jpg)'
+            'url(./build/img/bg-bridges.jpg)',
+            'url(./build/img/bg-bridges.jpg)',
+            'url(./build/img/bg-bridges.jpg)'
         ],
-        bgHome: 'url(./img/bg-bridges.jpg)',
-        bgUser: 'url(./img/bg-bridges.jpg)',
-        bgAbout: 'url(./img/bg-bridges.jpg)'
+        bgHome: 'url(./build/img/bg-bridges.jpg)',
+        bgUser: 'url(./build/img/bg-bridges.jpg)',
+        bgAbout: 'url(./build/img/bg-bridges.jpg)'
     },
     description: {
         //home page header description
