@@ -26,7 +26,7 @@ export const PLAN_TRANSITION = 'plan_transition';
 const ACCESS_TOKEN = '1718569605.1df0baa.16cb0565051842b68e8e667d5f6cfcca';
 const URL_INSTA = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}&count=8`;
 
-const URL_TRAININGS = './JSON/training_data.json';
+const URL_TRAININGS = './build/JSON/training_data.json';
 
 //get trainings data
 export function fetchTrainings() {
